@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --bg-main: hsl(218, 28%, 13%);
+  --bg-secondary: hsl(217, 28%, 15%);
+  --bg-footer: hsl(216, 53%, 9%);
+  --bg-testimonials: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+}
+body {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* Utility Classess */
+.btn {
+  display: inline-block;
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 50px;
+  width: 220px;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  background: linear-gradient(to right, var(--blue), var(--cyan));
+  transition: all 1s ease;
+  color: #fff;
+}
+.btn:hover {
+  background: linear-gradient(to left, var(--blue), var(--cyan));
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+}
+/* Header Start */
+#header {
+  background: url("../images/bg-curvy-desktop.svg") no-repeat bottom/contain
+    var(--bg-secondary);
+}
+
+#header .navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 3rem 0;
+  height: 180px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#header .navBar ul {
+  display: flex;
+}
+
+#header .navBar ul li a {
+  margin: 0 25px;
+  color: #fff;
+  padding-bottom: 5px;
+  font-family: "Raleway", sans-serif;
+  transition: 0.3s;
+}
+
+#header .navBar ul li a:hover {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+}
+
+#header .header-content {
+  padding: 5rem 0 12rem;
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+#header .header-content img,
+#section-2 .row img {
+  max-width: 100%;
+}
+
+#header .header-content h1 {
+  font-size: 40px;
+  margin: 3rem 0 1rem;
+  line-height: 1.5;
+}
+#header .header-content p {
+  max-width: 450px;
+  margin: auto;
+  line-height: 1.5;
+}
+/* Header End */
+/* Section 1 Start */
+#section-1,
+#section-2,
+#section-3 {
+  background-color: var(--bg-main);
+  padding: 5rem 2rem;
+}
+#section-1 .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3rem 7rem;
+  max-width: 800px;
+  margin: auto;
+}
+#section-1 .row .item {
+  text-align: center;
+}
+#section-1 .row .item h2 {
+  font-size: 20px;
+  margin: 15px 0 10px;
+  font-weight: 600;
+}
+#section-1 .row .item p {
+  line-height: 1.5;
+}
+/* Section 1 End  */
+/* Section 2 Start  */
+#section-2 .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 5rem;
+}
+#section-2 .row .section-content h2 {
+  font-size: 36px;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+#section-2 .row .section-content p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+#section-2 .row .section-content a {
+  color: var(--cyan);
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--cyan);
+  transition: all 0.2s ease-in-out;
+}
+#section-2 .row .section-content a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+#section-2 .row .section-content a i {
+  margin-left: 5px;
+}
+/* Section 2 End  */
+/* Section 3 Start  */
+#section-3 {
+  background: url("../images/bg-quotes.png");
+  background-color: var(--bg-main);
+  background-repeat: no-repeat;
+  background-position: 13.2% 6%;
+  padding: 5rem 0 15rem;
+}
+#section-3 .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+#section-3 .row .col {
+  padding: 2rem;
+  background-color: var(--bg-testimonials);
+}
+#section-3 .row .col .user {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+#section-3 .row .col .user img {
+  width: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#section-3 .row .col .user h3 {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+#section-3 .row .col .user p {
+  font-size: 10px;
+}
+/* Section 3 End  */
+/* Footer Start */
+/* Sign up start */
+#footer {
+  background-color: var(--bg-footer);
+  padding-bottom: 5rem;
+}
+#footer .signUp {
+  background-color: var(--bg-secondary);
+  max-width: 800px;
+  padding: 3rem 5rem;
+  margin: auto;
+  transform: translateY(-50%);
+  text-align: center;
+}
+#footer .signUp h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+#footer .signUp #form input {
+  width: 65%;
+  padding: 15px;
+  border-radius: 25px;
+  margin-right: 20px;
+}
+#footer .signUp #form .btn {
+  width: 30%;
+}
+/* Sign up End */
+#footer .row {
+  display: grid;
+  grid-template-columns: 3fr 2fr repeat(3, 1fr);
+  column-gap: 3rem;
+  margin-top: 1rem;
+}
+#footer .row .col {
+  display: flex;
+  align-items: start;
+}
+#footer .row .col img {
+  margin-right: 30px;
+  margin-top: 5px;
+}
+#footer ul li {
+  margin-bottom: 15px;
+}
+#footer ul li img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+#footer a {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+#footer a:hover {
+  color: var(--cyan);
+}
+.social-links i {
+  margin-right: 5px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.social-links i:hover {
+  color: var(--cyan);
+  border-color: var(--cyan);
+}
+/* Footer End */
+/* Responsive Start  */
+@media (max-width: 850px) {
+  /* Ipad */
+  #section-2 .row,
+  #section-3 .row {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+  #section-3 {
+    background-position: 4% 3%;
+  }
+  #footer .row {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+  #footer .signUp #form .btn,
+  #footer .signUp #form input {
+    width: 100%;
+  }
+  #footer .signUp #form input {
+    margin-bottom: -15px;
+    text-align: center;
+  }
+  #footer .signUp p {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 570px) {
+  /* Phones */
+  #header {
+    background: url("../images/bg-curvy-mobile.svg") no-repeat bottom/contain
+      var(--bg-secondary);
+  }
+  #header .navBar > img {
+    width: 120px;
+  }
+  #header .navBar ul li a {
+    margin: 0 10px;
+  }
+  #section-1 .row {
+    grid-template-columns: 1fr;
+  }
+  #header .header-content h1 {
+    font-size: 20px;
+  }
+  #header .header-content p {
+    font-size: 14px;
+    max-width: 400px;
+  }
+  #section-2 .row,
+  #section-3 .row {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+  #section-3 {
+    background-position: 9% 2%;
+  }
+  #footer .signUp #form .btn,
+  #footer .signUp #form input {
+    width: 100%;
+  }
+  #footer .signUp #form input {
+    margin-bottom: -15px;
+    text-align: center;
+  }
+  #footer .signUp p {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 380px) {
+  /* Small phones */
+  #header {
+    background: url("../images/bg-curvy-mobile.svg") no-repeat bottom/contain
+      var(--bg-secondary);
+  }
+  #header .navBar {
+    height: 90px;
+  }
+  #header .navBar > img {
+    width: 50px;
+  }
+  #header .navBar ul li a {
+    margin: 0 5px;
+  }
+  #header .header-content h1 {
+    font-size: 15px;
+  }
+  #section-1 .row {
+    grid-template-columns: 1fr;
+  }
+  #header .header-content p {
+    font-size: 13px;
+    max-width: 300px;
+  }
+  #section-2 .row,
+  #section-3 .row {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+  #section-3 {
+    background-position: 12% 2%;
+  }
+  #footer .signUp #form .btn,
+  #footer .signUp #form input {
+    width: 200%;
+    transform: translateX(-25%);
+  }
+  #footer .signUp #form input {
+    margin-bottom: -15px;
+    text-align: center;
+  }
+  #footer .signUp h2 {
+    font-size: 15px;
+  }
+  #footer .signUp p {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+}
+/* Responsive End  */
