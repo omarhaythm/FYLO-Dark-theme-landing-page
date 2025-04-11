@@ -97,6 +97,7 @@ a {
 #header .header-content img,
 #section-2 .row img {
   max-width: 100%;
+  padding: 0 2rem;
 }
 
 #header .header-content h1 {
