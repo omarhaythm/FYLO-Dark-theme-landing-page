@@ -344,6 +344,10 @@ a {
   #footer .signUp p {
     margin-bottom: 20px;
   }
+  #header .header-content img,
+  #section-2 .row img {
+    padding: 0 2rem;
+  }
 }
 @media (max-width: 380px) {
   /* Small phones */
@@ -393,6 +397,10 @@ a {
   #footer .signUp p {
     font-size: 10px;
     margin-bottom: 20px;
+  }
+  #header .header-content img,
+  #section-2 .row img {
+    padding: 0 2rem;
   }
 }
 /* Responsive End  */
